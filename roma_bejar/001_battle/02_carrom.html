@@ -1,0 +1,43 @@
+<div class="container">
+    <div id="sq1" class="square"></div>
+    <div id="sq2" class="square"></div>
+    <div id="sq3" class="square"></div>
+    <div id="sq4" class="square"></div>
+</div>
+
+<style>
+    * {
+        margin: 0;
+    }
+    
+    .square {
+        background: #fdc57b;
+        width: 50px;
+        height: 50px
+    }
+    
+    .container {
+        background: #62374e;
+        height: 300px;
+        width: 400px;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+    }
+    
+    .container .square:nth-of-type(1) {
+        grid-area: 2/2;
+    }
+    
+    .container .square:nth-of-type(2) {
+        grid-area: 2/7;
+    }
+    
+    .container .square:nth-of-type(3) {
+        grid-area: 5/2;
+    }
+    
+    .container .square:nth-of-type(4) {
+        grid-area: 5/7;
+    }
+</style>
