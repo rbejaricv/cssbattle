@@ -1,0 +1,49 @@
+<div class="half">
+    <div class="s-ci orange"></div>
+    <div id="up" class="o-donut">
+      <div class="i-donut"></div>
+    </div>
+    <div class="s-ci orange"></div>
+  </div>
+  
+  <div class="half">
+    <div id="left" class="o-donut">
+      <div class="i-donut"></div>
+    </div>
+    <div id="right" class="o-donut">
+      <div class="i-donut"></div>
+    </div>
+  </div>
+  
+  <style>
+    * { margin: 0;}
+    .orange { background: #D86F45;}
+    .half { width: 400px; height: 150px; background: #F5D6B4; overflow: hidden;}
+    .s-ci {
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+      position: absolute;
+    }
+    .s-ci:nth-of-type(1) { left: 70px; top: 140px;}
+    .s-ci:nth-of-type(3) { left: 310px; top: 140px;}
+    .o-donut {
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+      background: #D86F45;
+      position: relative;
+    }
+    .i-donut {
+      height: 60px;
+      width: 60px;
+      border-radius: 100px;
+      background: #F5D6B4;
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+    #up {left: 150px; top: 100px;}
+    #left {left: 70px; top: -50px;}
+    #right {left: 230px; top: -150px;}
+  </style>
