@@ -1,39 +1,65 @@
 <div class="container">
     <div class="square">
-      <div class="circle green"></div>
+        <div class="circle green"></div>
     </div>
     <div class="square">
-      <div class="circle yellow"></div>
+        <div class="circle yellow"></div>
     </div>
     <div class="square">
-      <div class="circle bone"></div>
+        <div class="circle bone"></div>
     </div>
-  </div>
-  <style>
-    * { margin: 0px;}
-    .green { background: #51B5A9; }
-    .yellow { background: #FADE8B; }
-    .bone { background: #F7F3D7; }
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .green {
+        background: #51B5A9;
+    }
+    
+    .yellow {
+        background: #FADE8B;
+    }
+    
+    .bone {
+        background: #F7F3D7;
+    }
+    
     .container {
-      background: #E3516E;
-      height: 300px;
-      width: 400px;
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 50% 50%;
+        background: #E3516E;
+        height: 300px;
+        width: 400px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
     }
+    
     .square {
-      height: 150px;
-      width: 200px;
-      overflow: hidden;
+        height: 150px;
+        width: 200px;
+        overflow: hidden;
     }
+    
     .circle {
-      border-radius: 100px;
-      height: 200px;
-      width: 200px;
-      position: relative;
+        border-radius: 100px;
+        height: 200px;
+        width: 200px;
+        position: relative;
     }
-    .circle.green { left: 100px; top: 50px;  }
-    .circle.yellow { left: -100px; top: 50px;}
-    .circle.bone {left: 100px; top: -100px;}
-  </style>
+    
+    .circle.green {
+        left: 100px;
+        top: 50px;
+    }
+    
+    .circle.yellow {
+        left: -100px;
+        top: 50px;
+    }
+    
+    .circle.bone {
+        left: 100px;
+        top: -100px;
+    }
+</style>
