@@ -1,0 +1,39 @@
+<div class="window grey">
+    <div id="pyramid" class="triangle"></div>
+    <div class="circumference yellow">
+      <div id="shade" class="triangle"></div>
+    </div>
+</div>
+  
+  <style>
+    * { margin: 0px;}
+    .grey { background: #191919;}
+    .yellow { background: #F9E492;}
+    .blue { background: #4F77FF;}
+    .window { width: 400px; height: 300px;}
+    .circumference {
+      border-radius: 100px;
+      height: 200px;
+      width: 200px;
+      position: relative;
+      left: 100px;
+      top: -90px;
+      overflow: hidden;
+    }
+    .triangle {
+      height: 0px;
+      width: 0px;
+      position: relative;
+      border-left: solid 140px transparent;
+      border-right: solid 140px transparent;
+    }
+    #shade { border-bottom: solid 140px #191919; left: -40px; top: 110px;}
+    #pyramid { 
+      border-bottom: solid 140px #4F77FF;
+      position: relative;
+      left: 60px;
+      top: 160px;
+    }
+    
+    
+  </style>

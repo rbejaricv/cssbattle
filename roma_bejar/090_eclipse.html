@@ -1,0 +1,40 @@
+<div class="window yellow">
+    <div id="upper" class="big-circ golden"></div>
+    <div class="mid-circ yellow">
+      <div class="sma-circ green"></div>
+    </div>
+    <div id="lower" class="big-circ golden"></div>
+  </div>
+  
+  <style>
+    * { margin: 0px;}
+    .window { height: 300px; width: 400px; overflow: hidden;}
+    .yellow { background: #F3AC3C;}
+    .golden { background: #998235;}
+    .green { background: #1A4341;}
+    .big-circ {
+      width: 400px;
+      height: 400px;
+      border-radius: 200px;
+      position: relative;
+    }
+    #upper {top: -250;}
+    .mid-circ {
+      width: 250px;
+      height: 250px;
+      border-radius: 200px;
+      position: relative;
+      top: -375px;
+      left: 75px;
+    }
+    .sma-circ {
+      width: 200px;
+      height: 200px;
+      border-radius: 150px;
+      position: relative;
+      left: 25px;
+      top: 25px;
+    }
+    #lower { top: -500px; }
+    
+  </style>

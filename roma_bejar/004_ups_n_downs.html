@@ -1,0 +1,27 @@
+<div class="window">
+    <div class="square yellow">
+      <div class="circle yellow"></div>
+    </div>
+    <div class="square yellow">
+      <div class="circle yellow up"></div>
+    </div>
+    <div class="square yellow">
+      <div class="circle yellow"></div>
+    </div>
+  </div>
+  <style>
+    * { margin: 0;}
+    .window { background: #62306D; height: 300px; width: 400px;}
+    .yellow { background: #F7EC7D; }
+    .square {
+      width: 100px;
+      height: 50px;
+      position: absolute;
+    }
+    div.square:nth-of-type(1) { left: 50px; top: 150px; }
+    div.square:nth-of-type(2) { left: 150px; top: 100px; }
+    div.square:nth-of-type(3) { left: 250px; top: 150px; }
+    .circle { border-radius: 50px; width: 100px; height: 100px;}
+    .up { position: relative; top: -50px;}
+  
+  </style>
