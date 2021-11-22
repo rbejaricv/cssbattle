@@ -1,0 +1,50 @@
+<div class="window blue">
+    <div class="circum purple"></div>
+    <div class="circum pink">
+        <div class="circum blue"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .blue {
+        background: #09042A;
+    }
+    
+    .purple {
+        background: #7B3F61;
+    }
+    
+    .pink {
+        background: #E78481;
+    }
+    
+    .circum {
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+        position: relative;
+    }
+    
+    .circum.purple {
+        left: 75px;
+        top: 75px;
+    }
+    
+    .circum.pink {
+        left: 175px;
+        top: -75px;
+        overflow: hidden;
+    }
+    
+    .circum.blue {
+        left: -100px;
+    }
+</style>
