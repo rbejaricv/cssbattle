@@ -1,0 +1,94 @@
+<div class="window">
+    <div class="circ-split">
+        <div class="circ red"></div>
+    </div>
+    <div class="circ-split">
+        <div class="circ white"></div>
+    </div>
+    <div class="rectangle maroon">
+        <div class="circ2 maroon">
+            <div class="circ3 yellow"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .window {
+        width: 400px;
+        height: 300px;
+        background: #6CB3A9;
+    }
+    
+    .red {
+        background: #D25B70;
+    }
+    
+    .white {
+        background: #FFFFFF;
+    }
+    
+    .maroon {
+        background: #781728;
+    }
+    
+    .yellow {
+        background: #F6DF96;
+    }
+    
+    .circ-split {
+        height: 140px;
+        width: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .circ {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        position: relative;
+    }
+    
+    .circ.red {
+        left: 100px;
+        top: 50px;
+    }
+    
+    .circ-split:nth-of-type(2) {
+        top: 20px;
+    }
+    
+    .circ.white {
+        left: 100px;
+        top: -110px;
+    }
+    
+    .rectangle {
+        width: 180px;
+        height: 20px;
+        position: relative;
+        top: -140px;
+        left: 110px;
+    }
+    
+    .circ2 {
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        position: relative;
+        top: -25px;
+        left: 55px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .circ3 {
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+</style>
