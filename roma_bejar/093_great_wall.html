@@ -4,12 +4,12 @@
         <div id="bar1" class="bar yellow"></div>
         <div id="bar2" class="bar yellow"></div>
         <div id="bar3" class="bar yellow"></div>
-        <div id="join1" class="join golden"></div>
-        <div id="join2" class="join golden"></div>
-        <div id="join3" class="join golden"></div>
         <div id="bar4" class="bar yellow"></div>
         <div id="bar5" class="bar yellow"></div>
         <div id="bar6" class="bar yellow"></div>
+        <div id="join1" class="join golden"></div>
+        <div id="join2" class="join golden"></div>
+        <div id="join3" class="join golden"></div>
     </div>
 </div>
 
@@ -65,9 +65,10 @@
     }
     
     .join {
-        width: 0px;
-        height: 0px;
-        border
+        height: 30px;
+        width: 20px;
+        clip-path: polygon(0px 12px, 20px 0px, 20px 17px, 0px 29px);
+        position: relative;
     }
     
     #bar1 {
@@ -98,5 +99,20 @@
     #bar6 {
         left: 120px;
         top: 42px;
+    }
+    
+    #join1 {
+        left: 100px;
+        top: -27px;
+    }
+    
+    #join2 {
+        left: 100px;
+        top: -30px;
+    }
+    
+    #join3 {
+        left: 100px;
+        top: -34px;
     }
 </style>

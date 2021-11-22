@@ -1,0 +1,58 @@
+<div class="window">
+    <div class="inverted triangle orange"></div>
+    <div class="inverted triangle pale-orange"></div>
+    <div class="triangle pale-orange"></div>
+    <div class="triangle orange"></div>
+</div>
+
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+        background: #F2F2B6;
+    }
+    
+    .triangle {
+        height: 0px;
+        width: 0px;
+        border-left: solid 75px transparent;
+        border-right: solid 75px transparent;
+        position: relative;
+    }
+    
+    .inverted {
+        transform: rotate(180deg)
+    }
+    
+    .orange {
+        border-bottom: solid 130px #FD4602;
+    }
+    
+    .pale-orange {
+        border-bottom: solid 130px #FF6D00;
+    }
+    
+    .inverted.triangle.orange {
+        left: 80px;
+        top: 85px
+    }
+    
+    .inverted.triangle.pale-orange {
+        left: 60px;
+        top: -45px;
+    }
+    
+    .triangle.pale-orange {
+        left: 190px;
+        top: -175px;
+    }
+    
+    .triangle.orange {
+        left: 170px;
+        top: -305px;
+    }
+</style>
