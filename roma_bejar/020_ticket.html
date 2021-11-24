@@ -1,0 +1,94 @@
+<div class="window purple">
+    <div class="big-rectangle yellow rel">
+        <div class="big-circle purple c1 rel"></div>
+        <div class="big-circle purple c2 rel"></div>
+        <div class="small-circle purple c3 rel"></div>
+        <div class="small-circle purple c4 rel"></div>
+    </div>
+    <div class="small-rectangle orange rel">
+        <div class="big-circle purple c5 rel"></div>
+        <div class="big-circle purple c6 rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .window {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .purple {
+        background: #62306D;
+    }
+    
+    .yellow {
+        background: #F7EC7D;
+    }
+    
+    .orange {
+        background: #E38F66;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .big-rectangle {
+        height: 100px;
+        width: 140px;
+        left: 100px;
+        top: 100px;
+    }
+    
+    .small-rectangle {
+        height: 100px;
+        width: 60px;
+        left: 240px;
+    }
+    
+    .big-circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    
+    .c1 {
+        left: -20px;
+        top: -20px;
+    }
+    
+    .c2 {
+        left: -20px;
+        top: 40px;
+    }
+    
+    .c5 {
+        left: 40px;
+        top: -20px;
+    }
+    
+    .c6 {
+        left: 40px;
+        top: 40px;
+    }
+    
+    .small-circle {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    
+    .c3 {
+        left: 130px;
+        top: -90px;
+    }
+    
+    .c4 {
+        left: 130px;
+        top: -10px;
+    }
+</style>

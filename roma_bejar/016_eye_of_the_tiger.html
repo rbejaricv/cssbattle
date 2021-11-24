@@ -1,0 +1,93 @@
+<div class="window green">
+    <div class="circle c1 golden center">
+        <div class="circle c2 green center">
+            <div class="circle c3 yellow center">
+                <div class="circle c4 green">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="triangle t1">
+        <div class="triangle reverted t2"></div>
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .window {
+        width: 400px;
+        height: 300px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .green {
+        background: #0B2429;
+    }
+    
+    .yellow {
+        background: #F3AC3C;
+    }
+    
+    .golden {
+        background: #998235;
+    }
+    
+    .circle {
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .c1 {
+        height: 200px;
+        width: 200px;
+        top: 50px;
+    }
+    
+    .c2 {
+        height: 180px;
+        width: 180px;
+    }
+    
+    .c3 {
+        height: 140px;
+        width: 140px;
+    }
+    
+    .c4 {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .triangle {
+        height: 0px;
+        width: 0px;
+        border-top: 75px solid transparent;
+        border-bottom: 75px solid transparent;
+        border-right: 75px solid #998235;
+        position: relative;
+    }
+    
+    .t1 {
+        top: -125px;
+        left: -104px;
+    }
+    
+    .reverted {
+        transform: rotate(180deg);
+    }
+    
+    .t2 {
+        left: 209px;
+        top: -75px;
+    }
+</style>

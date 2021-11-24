@@ -1,0 +1,57 @@
+<div class="window grey">
+    <div class="rectangle-a orange">
+        <div class="rectangle-b orange"></div>
+    </div>
+    <div class="rectangle-a blue">
+        <div class="rectangle-b blue"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .window {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .grey {
+        background: #222;
+    }
+    
+    .orange {
+        background: #F2994A;
+    }
+    
+    .blue {
+        background: #2D9CDB;
+    }
+    
+    .rectangle-a {
+        height: 30px;
+        width: 100px;
+        position: relative;
+        border-top-left-radius: 10px;
+    }
+    
+    .rectangle-b {
+        height: 51px;
+        width: 30px;
+        position: relative;
+        top: 29px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .rectangle-a.orange {
+        transform: rotate(-45deg);
+        top: 93px;
+        left: 120px;
+    }
+    
+    .rectangle-a.blue {
+        transform: rotate(135deg);
+        top: 147px;
+        left: 178px;
+    }
+</style>

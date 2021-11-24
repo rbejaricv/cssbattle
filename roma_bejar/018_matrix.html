@@ -1,0 +1,47 @@
+<div class="window brown">
+    <div class="slice orange"></div>
+    <div class="slice yellow"></div>
+    <div class="slice orange"></div>
+    <div class="slice yellow"></div>
+    <div class="slice yellow"></div>
+    <div class="slice orange"></div>
+    <div class="slice yellow"></div>
+    <div class="slice orange"></div>
+    <div class="slice orange"></div>
+    <div class="slice yellow"></div>
+    <div class="slice orange"></div>
+    <div class="slice yellow"></div>
+</div>
+
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .brown {
+        background: #5C434C;
+    }
+    
+    .yellow {
+        background: #F5D6B4;
+    }
+    
+    .orange {
+        background: #F09462;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .slice {
+        border-radius: 100% 0 0 0;
+        height: 80px;
+        width: 80px;
+        margin: 10 auto;
+    }
+</style>

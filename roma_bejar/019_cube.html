@@ -1,0 +1,64 @@
+<div class="window green-str">
+    <div class="paralelogram greellow rel"></div>
+    <div class="paralelogram green-li rel"></div>
+    <div class="square yellow turned rel"></div>
+</div>
+
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .green-str {
+        background: #0B2429;
+    }
+    
+    .yellow {
+        background: #F3AC3C;
+    }
+    
+    .greellow {
+        background: #998235;
+    }
+    
+    .green-li {
+        background: #1A4341;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .paralelogram {
+        height: 140px;
+        width: 70px;
+    }
+    
+    .paralelogram.greellow {
+        top: 45px;
+        left: 130px;
+        clip-path: polygon(0 50%, 100% 0%, 100% 50%, 0% 100%);
+    }
+    
+    .paralelogram.green-li {
+        top: -95px;
+        left: 200px;
+        clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 50%);
+    }
+    
+    .square {
+        height: 100px;
+        width: 100px;
+        left: 150px;
+        top: -145px;
+    }
+    
+    .turned {
+        transform: rotate(45deg);
+    }
+</style>
