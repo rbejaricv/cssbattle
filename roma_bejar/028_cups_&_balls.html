@@ -1,0 +1,68 @@
+<div class="window green">
+    <div class="container">
+        <div class="circle olive"></div>
+        <div class="cone yellow"></div>
+        <div class="cone olive"></div>
+        <div class="circle yellow"></div>
+        <div class="cone yellow inverted"></div>
+        <div class="circle olive"></div>
+        <div class="circle yellow"></div>
+        <div class="cone olive inverted"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .green {
+        background: #1A4341;
+    }
+    
+    .olive {
+        background: #998235;
+    }
+    
+    .yellow {
+        background: #F3AC3C;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .inverted {
+        transform: rotate(180deg);
+    }
+    
+    .top {
+        z-index: 100;
+    }
+    
+    .container {
+        width: 280px;
+        height: 140px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .cone {
+        height: 50px;
+        width: 50px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+</style>

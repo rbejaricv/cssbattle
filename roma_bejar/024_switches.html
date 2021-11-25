@@ -1,0 +1,64 @@
+<div class="window purple">
+    <div class="flat-cilinder purplish rel">
+        <div class="circle yellow rel"></div>
+    </div>
+    <div class="flat-cilinder orange rel">
+        <div class="circle yellow rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .purple {
+        background: #62306D;
+    }
+    
+    .purplish {
+        background: #AA445F;
+    }
+    
+    .orange {
+        background: #E38F66
+    }
+    
+    .yellow {
+        background: #F7EC7D;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .flat-cilinder {
+        height: 150px;
+        width: 100px;
+        border-radius: 50px;
+    }
+    
+    .flat-cilinder.purplish {
+        left: 80px;
+        top: 50px;
+    }
+    
+    .flat-cilinder.orange {
+        left: 220px;
+        top: -50px;
+    }
+    
+    .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .flat-cilinder.purplish>.circle {
+        top: 50px;
+    }
+</style>

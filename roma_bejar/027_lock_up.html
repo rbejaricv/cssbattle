@@ -1,0 +1,73 @@
+<div class="window orange">
+    <div class="container">
+        <div class="quarter magenta top"></div>
+        <div class="quarter magenta rotate90"></div>
+        <div class="quarter magenta rotate270"></div>
+        <div class="quarter magenta rotate180 top"></div>
+        <div class="donut"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .orange {
+        background: #E38F66;
+    }
+    
+    .magenta {
+        background: #AA445F;
+    }
+    
+    .yellow {
+        background: #F7EC7D;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .rotate90 {
+        transform: rotate(90deg);
+    }
+    
+    .rotate180 {
+        transform: rotate(180deg);
+    }
+    
+    .rotate270 {
+        transform: rotate(270deg);
+    }
+    
+    .top {
+        z-index: 100;
+    }
+    
+    .container {
+        width: 200px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    
+    .quarter {
+        height: 100px;
+        width: 100px;
+        border-top-left-radius: 100px;
+    }
+    
+    .donut {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 30px solid #F7EC7D;
+        position: relative;
+        left: 30px;
+        top: -170px;
+    }
+</style>

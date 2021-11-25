@@ -1,0 +1,70 @@
+<div class="window golden">
+    <div class="big-leaf green l1 rel"></div>
+    <div class="small-leaf yellow l2 rel"></div>
+    <div class="big-leaf flip green l3 rel"></div>
+    <div class="small-leaf flip yellow l4 rel"></div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .golden {
+        background: #998235;
+    }
+    
+    .green {
+        background: #1A4341;
+    }
+    
+    .yellow {
+        background: #F3AC3C;
+    }
+    
+    .window {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .flip {
+        transform: scaleX(-1);
+    }
+    
+    .big-leaf {
+        height: 100px;
+        width: 80px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    
+    .small-leaf {
+        height: 60px;
+        width: 80px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    
+    .l1 {
+        left: 110px;
+        top: 60px;
+    }
+    
+    .l2 {
+        left: 110px;
+        top: 80px;
+    }
+    
+    .l3 {
+        left: 210px;
+        top: -20px;
+    }
+    
+    .l4 {
+        left: 210px;
+        top: -200px;
+    }
+</style>
