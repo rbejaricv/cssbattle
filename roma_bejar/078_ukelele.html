@@ -1,0 +1,114 @@
+<div class="window yellow">
+    <div class="circle c-b olive rel">
+        <div class="bar-big green rel"></div>
+    </div>
+    <div class="mastil green rel">
+        <div class="end olive rel">
+            <div class="bar-small green rel"></div>
+            <div class="bar-small green rel"></div>
+        </div>
+    </div>
+    <div class="c-m circle olive center rel">
+        <div class="c-m2 circle yellow center rel">
+            <div class="c-m3 circle green rel"></div>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .yellow {
+        background: #F3AC3C;
+    }
+    
+    .olive {
+        background: #998235;
+    }
+    
+    .green {
+        background: #1A4341;
+    }
+    
+    .window {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .c-b {
+        height: 120px;
+        width: 120px;
+        top: 90px;
+        left: 45px;
+    }
+    
+    .bar-big {
+        height: 40px;
+        width: 10px;
+        border-radius: 5px;
+        top: 40px;
+        left: 40px;
+    }
+    
+    .mastil {
+        height: 20px;
+        width: 110px;
+        top: 20px;
+        left: 210px;
+    }
+    
+    .end {
+        height: 30px;
+        width: 40px;
+        left: 106px;
+        top: -6px;
+        border-radius: 10px;
+    }
+    
+    .bar-small {
+        height: 5px;
+        width: 20px;
+        border-radius: 5px;
+    }
+    
+    .bar-small:nth-of-type(1) {
+        left: 10px;
+        top: 8px;
+    }
+    
+    .bar-small:nth-of-type(2) {
+        left: 10px;
+        top: 13px;
+    }
+    
+    .c-m {
+        height: 100px;
+        width: 100px;
+        left: 115px;
+        top: -40px;
+    }
+    
+    .c-m2 {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .c-m3 {
+        height: 40px;
+        width: 40px;
+    }
+</style>

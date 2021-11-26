@@ -1,0 +1,48 @@
+<div class="w mag">
+    <div class="ci yel half"></div>
+    <div class="ci ora half rot180"></div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .mag {
+        background: #AA445F;
+    }
+    
+    .yel {
+        background: #F7EC7D;
+    }
+    
+    .ora {
+        background: #E38F66;
+    }
+    
+    .rot180 {
+        transform: rotate(180deg);
+    }
+    
+    .ci {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        clip-path: polygon(0% 0%, 50% 0, 50% 100%, 0% 100%);
+        position: relative;
+    }
+    
+    .ci.yel {
+        top: 50px;
+        left: 75px;
+    }
+    
+    .ci.ora {
+        top: -150px;
+        left: 125px;
+    }
+</style>

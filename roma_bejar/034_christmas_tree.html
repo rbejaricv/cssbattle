@@ -1,0 +1,61 @@
+<div class="w gre">
+    <div class="con rel">
+        <div class="tri gre-li rel"></div>
+        <div class="tri ora rel"></div>
+        <div class="tri bon rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .gre {
+        background: #007065;
+    }
+    
+    .gre-li {
+        border-bottom: 100px solid #00A79D;
+    }
+    
+    .ora {
+        border-bottom: 100px solid #F5C181;
+    }
+    
+    .bon {
+        border-bottom: 100px solid #FFEECF;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .w {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .tri {
+        height: 0px;
+        width: 0px;
+        border-left: 125px solid transparent;
+        border-right: 125px solid transparent;
+    }
+    
+    .tri:nth-of-type(1) {
+        top: -50px;
+    }
+    
+    .tri:nth-of-type(2) {
+        top: -200px;
+    }
+    
+    .tri:nth-of-type(3) {
+        top: -350px;
+    }
+    
+    .con {
+        top: 200px;
+        left: 75px;
+    }
+</style>

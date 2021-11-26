@@ -1,0 +1,70 @@
+<div class="w cen">
+    <div class="cross rot45">
+        <div class="rec gre"></div>
+        <div class="squ yel-lig"></div>
+        <div class="rec gre"></div>
+        <div class="rec yel-str rot90"></div>
+        <div class="rec yel-str rot90"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .yel-str {
+        background: #F3AC3C;
+    }
+    
+    .gre {
+        background: #A3A368;
+    }
+    
+    .yel-lig {
+        background: #FBE18C;
+    }
+    
+    .rot45 {
+        transform: rotate(45deg);
+    }
+    
+    .rot90 {
+        transform: rotate(90deg);
+    }
+    
+    .cen {
+        place-items: center;
+    }
+    
+    .rec {
+        height: 75px;
+        width: 50px;
+        position: relative;
+    }
+    
+    .squ {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .cross {
+        position: relative;
+        left: 71px;
+        top: 151px;
+    }
+    
+    .rec:nth-of-type(4) {
+        left: -62px;
+        top: -137px;
+    }
+    
+    .rec:nth-of-type(5) {
+        left: 63px;
+        top: -212px;
+    }
+</style>
