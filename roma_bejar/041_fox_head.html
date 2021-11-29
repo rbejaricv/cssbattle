@@ -1,0 +1,70 @@
+<div class="w purple">
+    <div class="fox">
+        <div class="left">
+            <div class="bar red rel">
+                <div class="ci-small circle purple rel"></div>
+                <div class="ci-big purple rel"></div>
+            </div>
+        </div>
+        <div class="left flipped rel">
+            <div class="bar red rel">
+                <div class="ci-small circle purple rel"></div>
+                <div class="ci-big purple rel"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .purple {
+        background-color: #293462;
+    }
+    
+    .red {
+        background-color: #FE5F55;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .bar {
+        height: 140px;
+        width: 50px;
+        left: 150px;
+        top: 80px;
+        border-top-right-radius: 40px
+    }
+    
+    .ci-small {
+        height: 30px;
+        width: 30px;
+        left: 15px;
+        top: 60px;
+    }
+    
+    .ci-big {
+        height: 80px;
+        width: 90px;
+        top: 70px;
+        left: -40px;
+        border-radius: 40px;
+    }
+    
+    .flipped {
+        transform: scaleX(-1);
+        top: -140px;
+    }
+</style>
