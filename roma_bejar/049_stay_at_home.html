@@ -1,0 +1,67 @@
+<div class="w cyan">
+    <div class="roof blue rel"></div>
+    <div class="main blue rel">
+        <div class="window yellow rel"></div>
+        <div class="door yellow rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .cyan {
+        background: #6592CF;
+    }
+    
+    .blue {
+        background: #243D83;
+    }
+    
+    .yellow {
+        background: #EEB850;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .roof {
+        height: 100px;
+        width: 200px;
+        clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+        top: 50px;
+        left: 100px;
+    }
+    
+    .main {
+        height: 100px;
+        width: 150;
+        left: 125px;
+        top: 50px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .window {
+        height: 10px;
+        width: 100px;
+        border-radius: 5px;
+        top: -5px;
+        left: 25px;
+    }
+    
+    .door {
+        height: 50px;
+        width: 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        top: 40px;
+        left: 50px;
+    }
+</style>
