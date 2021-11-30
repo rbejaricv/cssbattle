@@ -1,0 +1,60 @@
+<div class="w blue center">
+    <div class="circle yellow">
+        <div class="triangle t1 rel"></div>
+        <div class="triangle t2 rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .blue {
+        background: #293462;
+    }
+    
+    .yellow {
+        background: #FFF1C1;
+    }
+    
+    .red {
+        background: #FE5F55;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .circle {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .triangle {
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 150px solid #FE5F55;
+    }
+    
+    .t1 {
+        top: 130px;
+        left: -120px;
+    }
+    
+    .t2 {
+        top: -91px;
+        left: -9px;
+    }
+</style>
