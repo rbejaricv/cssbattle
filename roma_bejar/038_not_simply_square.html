@@ -1,0 +1,68 @@
+<div class="w blue">
+    <div class="square yellow"></div>
+    <div class="rectangle-big red rel r1">
+        <div class="rectangle-small maroon rel"></div>
+    </div>
+    <div class="rectangle-big red rotated rel r2">
+        <div class="rectangle-small maroon rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .blue {
+        background: #293462;
+    }
+    
+    .yellow {
+        background: #FFF1C1;
+    }
+    
+    .red {
+        background: #FE5F55;
+    }
+    
+    .maroon {
+        background: #A64942;
+    }
+    
+    .square {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .rectangle-big {
+        height: 150px;
+        width: 100px;
+    }
+    
+    .r1 {
+        left: 200px;
+        top: -200px;
+    }
+    
+    .r2 {
+        top: -175px;
+        left: 25px;
+    }
+    
+    .rectangle-small {
+        height: 50px;
+        top: 150px;
+    }
+    
+    .rotated {
+        transform: rotate(270deg);
+    }
+</style>
