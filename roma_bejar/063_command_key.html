@@ -1,0 +1,93 @@
+<div class="w center grey">
+    <div class="key rel">
+        <div id="corner1" class="rel"></div>
+        <div id="corner2" class="rel"></div>
+        <div id="corner3" class="rel"></div>
+        <div id="corner4" class="rel"></div>
+        <div id="square" class="rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .grey {
+        background: #191919;
+    }
+    
+    .cyan {
+        background: #5DBCF9;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .key {
+        height: 190px;
+        width: 190px;
+        top: -1px;
+        left: 1px;
+    }
+    
+    #corner1 {
+        height: 50px;
+        width: 50px;
+        border: 10px solid #5DBCF9;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    
+    #corner2 {
+        height: 50px;
+        width: 50px;
+        border: 10px solid #5DBCF9;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        left: 120px;
+        top: -70px;
+    }
+    
+    #corner3 {
+        height: 50px;
+        width: 50px;
+        border: 10px solid #5DBCF9;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        left: 0px;
+        top: -20px;
+    }
+    
+    #corner4 {
+        height: 50px;
+        width: 50px;
+        border: 10px solid #5DBCF9;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        left: 120px;
+        top: -90px;
+    }
+    
+    #square {
+        height: 50px;
+        width: 50px;
+        border: 10px solid #5DBCF9;
+        left: 60px;
+        top: -220px;
+    }
+</style>
