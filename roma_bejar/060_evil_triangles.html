@@ -1,0 +1,80 @@
+<div class="w grey">
+    <div class="container rel">
+        <div id="t1" class="triangle blue rel upside-down"></div>
+        <div id="t2" class="triangle blue rel upside-down"></div>
+        <div id="t3" class="triangle blue rel"></div>
+        <div id="t4" class="triangle blue rel"></div>
+        <div id="t5" class="triangle blue rel"></div>
+        <div id="t6" class="triangle blue rel upside-down"></div>
+        <div id="t7" class="triangle blue rel upside-down"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .blue {
+        background: #4F77FF;
+    }
+    
+    .grey {
+        background: #191919;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .container {
+        left: 100px;
+        top: 75px;
+        height: 150px;
+        width: 200px;
+        overflow: hidden;
+    }
+    
+    .upside-down {
+        transform: rotate(180deg);
+    }
+    
+    .triangle {
+        height: 50px;
+        width: 100px;
+        clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    }
+    
+    #t2 {
+        top: -50px;
+        left: 100px;
+    }
+    
+    #t3 {
+        top: -50px;
+        left: -50px;
+    }
+    
+    #t4 {
+        top: -100px;
+        left: 50px;
+    }
+    
+    #t5 {
+        top: -150px;
+        left: 150px;
+    }
+    
+    #t6 {
+        top: -150px;
+    }
+    
+    #t7 {
+        top: -200px;
+        left: 100px;
+    }
+</style>
