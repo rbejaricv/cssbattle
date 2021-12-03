@@ -1,0 +1,88 @@
+<div class="w grey">
+    <div class="neck blue rel">
+        <div class="speaker rel"></div>
+    </div>
+    <div class="circles rel">
+        <div class="c1 circle rel center">
+            <div class="c2 circle center">
+                <div class="c3 circle rel"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .grey {
+        background: #191919;
+    }
+    
+    .blue {
+        background: #5DBCF9;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .neck {
+        height: 50px;
+        width: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        top: 125px;
+        left: 75px;
+    }
+    
+    .speaker {
+        height: 0px;
+        width: 0px;
+        border-top: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-right: 100px solid #5DBCF9;
+        left: 25px;
+        top: -75px;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .circles {
+        height: 200px;
+        width: 100px;
+        left: 225px;
+        overflow: hidden;
+    }
+    
+    .c1 {
+        height: 180px;
+        width: 180px;
+        border: 10px solid #5DBCF9;
+        left: -100px;
+    }
+    
+    .c2 {
+        height: 130px;
+        width: 130px;
+        border: 10px solid #5DBCF9;
+    }
+    
+    .c3 {
+        height: 80px;
+        width: 80px;
+        border: 10px solid #5DBCF9;
+    }
+</style>
