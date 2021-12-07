@@ -1,0 +1,85 @@
+<div class="w blue">
+    <div class="string-outter white rel">
+        <div class="string-inner blue rel"></div>
+    </div>
+    <div class="mask white rel">
+        <div id="bar1" class="bar red rel"></div>
+        <div id="bar2" class="bar red rel"></div>
+        <div class="circle red rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .blue {
+        background: #293462;
+    }
+    
+    .white {
+        background: #FFF1C1;
+    }
+    
+    .red {
+        background: #FE5F55;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .string-outter {
+        height: 60px;
+        width: 270px;
+        border-radius: 30px;
+        top: 100px;
+        left: 65px;
+    }
+    
+    .string-inner {
+        height: 40px;
+        width: 250px;
+        border-radius: 20px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .mask {
+        height: 100px;
+        width: 150px;
+        left: 125px;
+        top: 40px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    
+    .bar {
+        height: 10px;
+        width: 40px;
+        border-radius: 5px;
+    }
+    
+    #bar1 {
+        top: 20px;
+        left: 20px;
+    }
+    
+    #bar2 {
+        top: 30px;
+        left: 20px;
+    }
+    
+    .circle {
+        border-radius: 50%;
+        aspect-ratio: 1;
+        height: 40px;
+        left: 90px;
+        top: 20px;
+    }
+</style>

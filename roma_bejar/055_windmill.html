@@ -1,0 +1,69 @@
+<div class="w">
+    <div class="p">
+        <div id="c1" class="c y"></div>
+    </div>
+    <div class="p">
+        <div id="c2" class="c b"></div>
+    </div>
+    <div class="p">
+        <div id="c3" class="c b"></div>
+    </div>
+    <div class="p">
+        <div id="c4" class="c y"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .y {
+        background: #F9E492;
+    }
+    
+    .b {
+        background: #4F77FF;
+    }
+    
+    .w {
+        background: #19191A;
+        height: 300px;
+        width: 400px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .p {
+        height: 150px;
+        width: 200px;
+        overflow: hidden;
+    }
+    
+    .c {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: relative;
+    }
+    
+    #c1 {
+        left: 100px;
+        top: 100px;
+    }
+    
+    #c2 {
+        left: -50px;
+        top: 50px;
+    }
+    
+    #c3 {
+        left: 150px;
+        top: 0px;
+    }
+    
+    #c4 {
+        left: 0px;
+        top: -50px;
+    }
+</style>
