@@ -1,0 +1,83 @@
+<div class="w grey">
+    <div id="world" class="circle blue">
+        <div id="c1" class="circle rel"></div>
+        <div id="c2" class="circle rel"></div>
+        <div id="bh1" class="bar-horizontal grey rel"></div>
+        <div id="bh2" class="bar-horizontal grey rel"></div>
+        <div id="bh3" class="bar-horizontal grey rel"></div>
+        <div class="bar-vertical grey rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .grey {
+        background: #191919;
+    }
+    
+    .blue {
+        background: #4F77FF;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    #world {
+        height: 150px;
+        width: 150px;
+    }
+    
+    #c1 {
+        height: 190px;
+        width: 190px;
+        border: 10px solid #191919;
+        left: 30px;
+        top: -30px;
+    }
+    
+    #c2 {
+        height: 190px;
+        width: 190px;
+        border: 10px solid #191919;
+        left: -90px;
+        top: -240px;
+    }
+    
+    .bar-horizontal {
+        height: 10px;
+        width: 150px;
+    }
+    
+    #bh1 {
+        top: -390px;
+    }
+    
+    #bh2 {
+        top: -360px;
+    }
+    
+    #bh3 {
+        top: -330px;
+    }
+    
+    .bar-vertical {
+        height: 150px;
+        width: 10px;
+        top: -450px;
+        left: 70px;
+    }
+</style>

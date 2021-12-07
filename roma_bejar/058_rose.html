@@ -1,0 +1,115 @@
+<div class="w grey">
+    <div id="petal1" class="blue rel">
+        <div id="space1" class="grey center rel">
+            <div id="petal2" class="blue rel">
+                <div id="space2" class="grey center circle rel">
+                    <div id="petal3" class="blue circle rel"></div>
+                </div>
+            </div>
+        </div>
+        <div id="bot" class="circle yellow rel">
+            <div id="top" class="blue circle rel"></div>
+            <div id="stick" class="yellow rel"></div>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .grey {
+        background: #191919;
+    }
+    
+    .blue {
+        background: #4F77FF;
+    }
+    
+    .yellow {
+        background: #F9E492;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    #petal1 {
+        height: 30px;
+        width: 140px;
+        left: 130px;
+        top: 85px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    
+    #space1 {
+        height: 50px;
+        width: 120px;
+        left: 10px;
+        top: -30px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+    
+    #petal2 {
+        height: 30px;
+        width: 100px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    
+    #space2 {
+        height: 50px;
+        width: 50px;
+        left: 25px;
+        top: -30px;
+    }
+    
+    #petal3 {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #bot {
+        height: 40px;
+        width: 40px;
+        left: 50px;
+        top: 10px;
+    }
+    
+    #top {
+        height: 100px;
+        width: 100px;
+        left: -30px;
+        top: -80px;
+        clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+    }
+    
+    #stick {
+        height: 75px;
+        width: 20px;
+        left: 10px;
+        top: -65px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+</style>

@@ -1,0 +1,108 @@
+<div class="w yellow">
+    <div id="fingers" class="rel">
+        <div id="finger1" class="black rel"></div>
+        <div id="finger2" class="black rel"></div>
+        <div id="finger3" class="black rel"></div>
+        <div id="finger4" class="black rel"></div>
+    </div>
+    <div id="hand" class="black rel"></div>
+    <div id="wrist" class="black rel"></div>
+    <div id="thumb" class="yellow rel center">
+        <div id="finger5" class="black rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .black {
+        background: #191919;
+    }
+    
+    .yellow {
+        background: #F9E492;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    #fingers {
+        height: 55px;
+        width: 96px;
+        top: 78px;
+        left: 154px;
+    }
+    
+    #hand {
+        height: 40px;
+        width: 100px;
+        top: 83px;
+        left: 150px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    #wrist {
+        height: 45px;
+        width: 50px;
+        top: 83px;
+        left: 175px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    #thumb {
+        height: 75px;
+        width: 30px;
+        top: -36px;
+        left: 152px;
+        transform: rotate(60deg);
+        border-radius: 20px;
+        display: grid;
+        place-items: center;
+    }
+    
+    #finger5 {
+        height: 65px;
+        width: 20px;
+        border-radius: 10px;
+    }
+    
+    #finger1 {
+        height: 45px;
+        width: 20px;
+        top: 10px;
+        border-radius: 10px;
+    }
+    
+    #finger2 {
+        border-radius: 10px;
+        height: 50px;
+        width: 20px;
+        top: -45px;
+        left: 26px;
+    }
+    
+    #finger3 {
+        border-radius: 10px;
+        height: 45px;
+        width: 20px;
+        top: -85px;
+        left: 52px;
+    }
+    
+    #finger4 {
+        border-radius: 10px;
+        height: 35px;
+        width: 20px;
+        top: -120px;
+        left: 76px;
+    }
+</style>
