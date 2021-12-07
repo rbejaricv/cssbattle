@@ -1,0 +1,77 @@
+<div class="w center">
+    <div class="c1 circle center">
+        <div class="c2 circle">
+            <div class="c3 circle"></div>
+            <div class="left circle"></div>
+            <div class="right circle"></div>
+        </div>
+    </div>
+</div>
+<style>
+     :root {
+        --grey: #191919;
+        --orange: #E08027;
+        --brown: #824B20;
+        --yellow: #FFF58F;
+    }
+    
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        background: var(--grey);
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .c1 {
+        height: 160px;
+        width: 160px;
+        background: var(--brown);
+    }
+    
+    .c2 {
+        height: 100px;
+        width: 100px;
+        background: var(--orange);
+    }
+    
+    .c2 * {
+        position: relative;
+    }
+    
+    .c3 {
+        height: 80px;
+        width: 80px;
+        border: 20px solid var(--yellow);
+        left: -10px;
+        top: -10px;
+        clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+    }
+    
+    .left {
+        height: 20px;
+        width: 20px;
+        background: var(--yellow);
+        left: -10px;
+        top: -80px;
+    }
+    
+    .right {
+        height: 20px;
+        width: 20px;
+        background: var(--yellow);
+        left: 90px;
+        top: -100px;
+    }
+</style>
