@@ -1,0 +1,19 @@
+<div class="w">
+    <div class="door">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+        <div class="s4"></div>
+    </div>
+</div>
+<style>
+    *{margin: 0px;}
+    :root{--grey: #191919; --blue: #4F77FF;}
+    .w{height: 300px; width: 400px; background: var(--grey);}
+    .door {height: 150px; width: 100px; left: 150px;top: 75px; border-top-left-radius: 50px; border-top-right-radius: 50px; background: var(--blue); position: relative;}
+    .door *{height: 20px; position: absolute; right: 0%; background: var(--grey);}
+    .s1{width: 80px;bottom: 0%;}
+    .s2{width: 60px;bottom: 23px;}
+    .s3{width: 40px;bottom: 47px;}
+    .s4{width: 20px;bottom: 72px;}
+</style>
