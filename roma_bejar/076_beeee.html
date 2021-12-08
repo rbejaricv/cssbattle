@@ -1,0 +1,102 @@
+<div class="w">
+    <div class="wings rel">
+        <div class="left-wing wing"></div>
+        <div class="right-wing wing"></div>
+    </div>
+    <div class="body rel">
+        <div class="strip1 rel"></div>
+        <div class="strip2 strip rel"></div>
+        <div class="strip3 strip rel"></div>
+        <div class="eye rel"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+     :root {
+        --golden: #998235;
+        --white: #FFFFFF;
+        --yellow: #EFF33C;
+        --grey: #191919;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        background: var(--golden);
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .wings {
+        height: 75px;
+        width: 150px;
+        left: 125px;
+        top: 75px;
+    }
+    
+    .wing {
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        background: var(--white);
+        float: left;
+    }
+    
+    .left-wing {
+        border-bottom-right-radius: 0px;
+    }
+    
+    .right-wing {
+        border-bottom-left-radius: 0px;
+    }
+    
+    .body {
+        background: var(--yellow);
+        height: 75px;
+        width: 150px;
+        top: 75px;
+        left: 125px;
+        border-radius: 50px;
+    }
+    
+    .body * {
+        background: var(--grey);
+        overflow: hidden;
+    }
+    
+    .strip {
+        width: 25px;
+        height: 75px;
+    }
+    
+    .strip1 {
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        clip-path: polygon(0% 0%, 34% 0%, 34% 100%, 0% 100%)
+    }
+    
+    .strip2 {
+        top: -75px;
+        left: 35px;
+    }
+    
+    .strip3 {
+        top: -150px;
+        left: 70px;
+    }
+    
+    .eye {
+        background: var(--grey);
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        top: -205px;
+        left: 115px;
+    }
+</style>
