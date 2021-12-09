@@ -1,0 +1,79 @@
+<div class="w">
+    <div class="o o1">
+        <div class="hole"></div>
+    </div>
+    <div class="d">
+        <div class="hole"></div>
+        <div class="stick"></div>
+    </div>
+    <div class="o o2">
+        <div class="hole"></div>
+    </div>
+    <div class="o o3">
+        <div class="hole"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+     :root {
+        --grey: #191919;
+        --purple: #714B67;
+        --light-grey: #8F8F8F;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        background: var(--grey);
+        position: relative;
+    }
+    
+    .w * {
+        position: absolute;
+        background: var(--light-grey);
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        top: 122px;
+    }
+    
+    .w * * {
+        background: var(--grey);
+        height: 40px;
+        width: 40px;
+        top: 20px;
+    }
+    
+    .o1 {
+        background: var(--purple);
+        left: 37px;
+    }
+    
+    .d {
+        left: 119px;
+    }
+    
+    .o2 {
+        left: 201px;
+    }
+    
+    .o3 {
+        left: 283px;
+    }
+    
+    .stick {
+        border-radius: 0px;
+        background: var(--light-grey);
+        left: 60px;
+        top: -20px;
+        height: 60px;
+        width: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+</style>

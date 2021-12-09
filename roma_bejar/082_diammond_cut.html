@@ -1,0 +1,73 @@
+<div class="w">
+    <div class="container">
+        <div class="square1">
+            <div class="square2">
+                <div class="square3 small"></div>
+            </div>
+        </div>
+        <div class="small2 small"></div>
+        <div class="small3 small"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+     :root {
+        --yellow: #F3AC3C;
+        --golden: #998235;
+        --green: #1A4341;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        background: var(--yellow);
+    }
+    
+    .container {
+        transform: rotate(45deg);
+        position: relative;
+        top: 146px;
+        left: 62px;
+    }
+    
+    .square1 {
+        height: 160px;
+        width: 160px;
+        display: grid;
+        place-items: center;
+        background: var(--golden);
+    }
+    
+    .square2 {
+        height: 100px;
+        width: 100px;
+        display: grid;
+        place-items: center;
+        background: var(--yellow);
+    }
+    
+    .small {
+        height: 30px;
+        width: 30px;
+        background: var(--yellow);
+    }
+    
+    .square3 {
+        background: var(--green);
+    }
+    
+    .small2 {
+        position: relative;
+        left: px;
+        top: -95px;
+    }
+    
+    .small3 {
+        position: relative;
+        left: 65px;
+        top: -190px;
+    }
+</style>
