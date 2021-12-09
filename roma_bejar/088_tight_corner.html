@@ -1,0 +1,74 @@
+<div class="w">
+    <div class="bar-left"></div>
+    <div class="bar-right"></div>
+    <div class="bar-center"></div>
+    <div class="upper-corner"></div>
+    <div class="lower-corner"></div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+     :root {
+        --bone: #F7F3DA;
+        --magenta: #D25B70;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        background: var(--bone);
+        position: relative;
+    }
+    
+    .w * {
+        position: absolute;
+    }
+    
+    .bar-left,
+    .bar-right,
+    .bar-center {
+        background: var(--magenta);
+    }
+    
+    .bar-left,
+    .bar-right {
+        height: 40px;
+        width: 200px;
+    }
+    
+    .bar-left {
+        top: 110px;
+        border-top-right-radius: 10px;
+    }
+    
+    .bar-right {
+        bottom: 110px;
+        right: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .bar-center {
+        height: 40px;
+        width: 40px;
+        left: 180px;
+        top: 130px;
+    }
+    
+    .upper-corner,
+    .lower-corner {
+        background: var(--bone);
+        height: 150px;
+        width: 200px;
+        border-radius: 20px;
+    }
+    
+    .upper-corner {
+        right: 0px;
+    }
+    
+    .lower-corner {
+        bottom: 0px;
+    }
+</style>
