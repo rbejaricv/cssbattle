@@ -1,47 +1,93 @@
 <div class="w">
-    <div class="q1 q"></div>
-    <div class="m"></div>
-    <div class="q2 q"></div>
+    <div class="upper">
+        <div class="up"></div>
+        <div class="down"></div>
+        <div class="piece"></div>
+    </div>
+    <div class="lower">
+        <div class="up2 up"></div>
+        <div class="down2 down"></div>
+        <div class="piece2 piece"></div>
+    </div>
+    <div class="center"></div>
 </div>
 <style>
     * {
         margin: 0px;
     }
     
+     :root {
+        --yellow: #F3AC3C;
+        --green: #1A4341;
+    }
+    
     .w {
         height: 300px;
         width: 400px;
+        background: var(--yellow);
     }
     
-    .w,
-    .m {
-        background: #F3AC3C;
-    }
-    
-    .w * {
+    .lower,
+    .upper {
+        height: 100px;
+        width: 150px;
         position: relative;
     }
     
-    .q {
-        height: 75px;
+    .upper {
+        left: 65px;
+        top: 65px;
+    }
+    
+    .lower {
+        left: 185px;
+        top: 35px;
+    }
+    
+    .lower *,
+    .upper * {
+        position: absolute;
+        background: var(--green);
+        border-radius: 10px;
+    }
+    
+    .up {
+        height: 50px;
         width: 150px;
         ;
+    }
+    
+    .down {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .piece {
+        height: 60px;
+        width: 110px;
+    }
+    
+    .up2 {
+        bottom: 0px;
+    }
+    
+    .down2 {
+        right: 0px;
+        top: px;
+    }
+    
+    .piece2 {
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .center {
+        background: var(--yellow);
+        height: 70px;
+        width: 70px;
         border-radius: 10px;
-        background: #1A4341;
-    }
-    
-    .q1 {
-        left: px;
-        top: px;
-    }
-    
-    .m {
-        left: px;
-        top: px;
-    }
-    
-    .q2 {
-        left: px;
-        top: px;
+        position: relative;
+        left: 165px;
+        top: -85px;
     }
 </style>
