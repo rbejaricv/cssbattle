@@ -1,0 +1,53 @@
+<div class="w">
+    <div class="y"></div>
+    <div class="g"></div>
+    <div class="p"></div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+     :root {
+        --magenta: #D25B70;
+        --light-yellow: #F7F3DA;
+        --yellow: #F6DF96;
+        --green: #6CB3A9;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        background-color: var(--magenta);
+    }
+    
+    .w * {
+        position: relative;
+    }
+    
+    .y {
+        height: 100px;
+        width: 100px;
+        background: var(--light-yellow);
+        left: 150px;
+        top: 150px;
+    }
+    
+    .g {
+        height: 60px;
+        width: 60px;
+        background: var(--green);
+        left: 114px;
+        top: -22px;
+        transform: rotate(37deg);
+    }
+    
+    .p {
+        height: 80px;
+        width: 80px;
+        background: var(--yellow);
+        left: 202px;
+        top: -106px;
+        transform: rotate(-53deg);
+    }
+</style>
