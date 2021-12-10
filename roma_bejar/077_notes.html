@@ -1,0 +1,107 @@
+<div class="w">
+    <div class="note1 note">
+        <div class="stick"></div>
+        <div class="oval"></div>
+        <div class="zero"></div>
+    </div>
+    <div class="note2 note">
+        <div class="stick"></div>
+        <div class="oval"></div>
+    </div>
+    <div class="note3 note">
+        <div class="stick"></div>
+        <div class="oval"></div>
+        <div class="first"></div>
+    </div>
+    <div class="note4 note">
+        <div class="stick"></div>
+        <div class="oval"></div>
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+
+    :root {
+        --magenta: #FE5F55;
+        --maroon: #A64942;
+        --grey: #191919;
+    }
+
+    .w {
+        height: 300px;
+        width: 400px;
+        background: var(--grey);
+        position: relative;
+    }
+
+    .w * {
+        position: absolute;
+    }
+
+    .note {
+        height: 120px;
+        width: 50px;
+        left: px;
+        top: 90px;
+    }
+
+    .note1 {
+        left: 55px;
+    }
+
+    .note2 {
+        left: 125px;
+    }
+
+    .note3 {
+        left: 195px;
+    }
+
+    .note4 {
+        left: 265px;
+    }
+
+    .note * {
+        background: var(--magenta);
+    }
+
+    .note3 * {
+        background: var(--maroon);
+    }
+
+    .stick {
+        height: 100px;
+        width: 10px;
+        right: 0px;
+    }
+
+    .oval {
+        bottom: 0px;
+        height: 40px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .zero {
+        left: 40px;
+        height: 10px;
+        width: 70px;
+    }
+
+    .first {
+        right: -30px;
+        height: 10px;
+        width: 30px;
+    }
+
+    .second {
+        right: -30px;
+        top: 20px;
+        height: 10px;
+        width: 30px;
+    }
+</style>
