@@ -1,0 +1,57 @@
+<div class="w">
+    <div class="notes">
+        <div class="note">
+            <div class="circle"></div>
+        </div>
+        <div class="note">
+            <div class="circle"></div>
+        </div>
+        <div class="note">
+            <div class="circle"></div>
+        </div>
+        <div class="note">
+            <div class="circle"></div>
+        </div>
+        <div class="note"></div>
+        <div class="note"></div>
+        <div class="note maroon"></div>
+        <div class="note"></div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+     :root {
+        --grey: #191919;
+        --red: #FE5F55;
+        --maroon: #A64942;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        background: var(--grey);
+    }
+    
+    .notes {
+        position: relative;
+    }
+    
+    .notes {
+        background: white;
+        height: 120px;
+        top: 90px;
+        left: 55px;
+        display: grid;
+        grid-auto-flow: column;
+    }
+    
+    .note {
+        background: var(--red);
+        width: 10px;
+        height: 120px;
+        padding-left: 10px;
+    }
+</style>

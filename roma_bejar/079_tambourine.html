@@ -1,0 +1,148 @@
+<div class="w">
+    <div class="outer">
+        <div class="inner">
+            <div class="lower">
+                <div class="inner-lower"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c1 c">
+        <div class="hole">
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="c2 c">
+        <div class="hole">
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="c3 c">
+        <div class="hole">
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="c4 c">
+        <div class="hole">
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="c5 c">
+        <div class="hole">
+            <div class="dot"></div>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+    }
+    
+    .outer,
+    .c,
+    .lower,
+    .dot {
+        background: #243D83;
+    }
+    
+    .w,
+    .hole,
+    .inner,
+    .inner-lower {
+        background: #6592CF;
+    }
+    
+    .w,
+    .w * {
+        position: relative;
+    }
+    
+    .outer,
+    .inner,
+    .lower,
+    .c,
+    .hole,
+    .dot,
+    .inner-lower {
+        border-radius: 50%;
+    }
+    
+    .outer,
+    .c,
+    .hole,
+    .lower {
+        display: grid;
+        place-items: center;
+    }
+    
+    .outer {
+        height: 170px;
+        width: 170px;
+        top: 75px;
+        left: 115px;
+        overflow: hidden;
+    }
+    
+    .inner {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .lower {
+        height: 120px;
+        width: 120px;
+        top: 115px;
+        left: 15px;
+    }
+    
+    .inner-lower {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .c {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+    }
+    
+    .c1 {
+        top: 165px;
+        left: 105px;
+    }
+    
+    .c2 {
+        top: 95px;
+        left: 105px;
+    }
+    
+    .c3 {
+        top: 55px;
+        left: 175px;
+    }
+    
+    .c4 {
+        top: 95px;
+        left: 245px;
+    }
+    
+    .c5 {
+        top: 165px;
+        left: 245px;
+    }
+    
+    .hole {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+</style>
