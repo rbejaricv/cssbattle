@@ -1,0 +1,116 @@
+<div class="w blue">
+    <div class="main maroon">
+        <div class="face circle magenta"></div>
+        <div class="n1 nostril circle blue"></div>
+        <div class="n2 nostril circle blue"></div>
+    </div>
+    <div class="e1 eye circle magenta center">
+        <div class="eye-mid circle yellow center">
+            <div class="pupil circle blue"></div>
+        </div>
+    </div>
+    <div class="e2 eye circle magenta center">
+        <div class="eye-mid circle yellow center">
+            <div class="pupil circle blue"></div>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+     :root {
+        --d: 400px;
+    }
+    
+    .blue {
+        background: #293462;
+    }
+    
+    .magenta {
+        background: #FE5F55;
+    }
+    
+    .maroon {
+        background: #A64942;
+    }
+    
+    .yellow {
+        background: #FFF1C1;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        position: relative;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .w * {
+        position: absolute;
+    }
+    
+    .main {
+        height: 100px;
+        width: 150px;
+        top: 110px;
+        left: 125px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .face {
+        height: var(--d);
+        width: var(--d);
+        top: -330%;
+        left: -83%;
+    }
+    
+    .nostril {
+        height: 10px;
+        width: 10px;
+    }
+    
+    .n1 {
+        top: 50px;
+        left: 60px;
+    }
+    
+    .n2 {
+        top: 50px;
+        left: 80px;
+    }
+    
+    .eye {
+        height: 50px;
+        width: 50px;
+        top: 85px;
+    }
+    
+    .e1 {
+        left: 140px;
+    }
+    
+    .e2 {
+        left: 210px;
+    }
+    
+    .eye-mid {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .pupil {
+        height: 10px;
+        width: 10px;
+    }
+</style>
