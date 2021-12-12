@@ -1,5 +1,97 @@
-<div class="w grey">
-    <div class="sq1 grey rel">
-        <div class="sq2 grey rel"></div>
-    </div>
+<div class="w">
+    <div class="top b"></div>
+    <div class="mid b"></div>
+    <div class="sq-left q"></div>
+    <div class="sq-right q"></div>
+    <div class="sq-mid"></div>
+    <div class="sea-up s"></div>
+    <div class="sea-down s"></div>
 </div>
+<style>
+    * {
+        margin: 0px;
+    }
+
+    :root {
+        --grey: #191919;
+        --cyan: #5DBCF9;
+    }
+
+    .w,
+    .w * {
+        background: var(--grey);
+    }
+
+    .w {
+        height: 300px;
+        width: 400px;
+        position: relative;
+    }
+
+    .w * {
+        position: absolute;
+    }
+
+    .b {
+        border: 10px solid var(--cyan);
+    }
+
+    .top {
+        top: 67px;
+        left: 175px;
+        height: 20px;
+        width: 30px;
+    }
+
+    .mid {
+        top: 97px;
+        left: 150px;
+        height: 50px;
+        width: 80px;
+    }
+
+    .q {
+        border-top: 10px solid var(--cyan);
+        height: 25px;
+        width: 75px;
+        top: 148px;
+    }
+
+    .sq-left {
+        left: 126px;
+        transform: rotate(-30deg);
+        border-left: 10px solid var(--cyan);
+    }
+
+    .sq-right {
+        left: 191px;
+        transform: rotate(30deg);
+        border-right: 10px solid var(--cyan);
+    }
+
+    .sq-mid {
+        background: var(--cyan);
+        top: 127px;
+        left: 195px;
+        height: 80px;
+        width: 10px;
+        clip-path: polygon(0% 3%, 50% 0%, 100% 3%, 100% 100%, 0% 100%);
+    }
+
+    .s {
+        border-bottom: 10px solid var(--cyan);
+    }
+
+    .sea-up {
+        top: 194px;
+        left: 100px;
+        height: 10px;
+        width: 200px;
+    }
+
+    .sea-down {
+        top: 224px;
+        left: 145px;
+        width: 110px;
+    }
+</style>
