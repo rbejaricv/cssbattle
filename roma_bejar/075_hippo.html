@@ -1,0 +1,129 @@
+<div class="w grey">
+    <div class="ear-l ear magenta circle center">
+        <div class="ear-in black circle"></div>
+    </div>
+    <div class="ear-r ear magenta circle center">
+        <div class="ear-in black circle"></div>
+    </div>
+    <div class="head magenta">
+        <div class="eye-l eye circle black"></div>
+        <div class="eye-r eye circle black"></div>
+    </div>
+    <div class="mouth maroon">
+        <div class="nl nostril black circle"></div>
+        <div class="nr nostril black circle"></div>
+    </div>
+</div>
+
+
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .grey {
+        background: #191919;
+    }
+    
+    .maroon {
+        background: #A64942;
+    }
+    
+    .magenta {
+        background: #FE5F55;
+    }
+    
+    .black {
+        background: #000000;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        position: relative;
+    }
+    
+    .w * {
+        position: absolute;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .ear {
+        height: 38px;
+        width: 20px;
+        top: 69px;
+    }
+    
+    .ear-l {
+        transform: rotate(-45deg);
+        left: 153px;
+    }
+    
+    .ear-r {
+        transform: rotate(45deg);
+        left: 227px;
+    }
+    
+    .ear-in {
+        height: 28px;
+        width: 10px;
+    }
+    
+    .head {
+        height: 95px;
+        width: 130px;
+        left: 135px;
+        top: 75px;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+    
+    .eye {
+        height: 10px;
+        width: 10px;
+        top: 50px;
+    }
+    
+    .eye-l {
+        left: 25px;
+    }
+    
+    .eye-r {
+        left: 95px;
+    }
+    
+    .mouth {
+        height: 100px;
+        width: 150px;
+        top: 145px;
+        left: 125px;
+        border-top-left-radius: 55px;
+        border-top-right-radius: 55px;
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 45px;
+    }
+    
+    .nostril {
+        height: 30px;
+        width: 20px;
+        top: 20px;
+    }
+    
+    .nl {
+        transform: rotate(45deg);
+        left: 25px;
+    }
+    
+    .nr {
+        transform: rotate(-45deg);
+        left: 105px;
+    }
+</style>

@@ -1,0 +1,152 @@
+<div class="w yellow">
+    <div class="ear-l ear circle golden center">
+        <div class="inner-ear circle green"></div>
+    </div>
+    <div class="ear-r ear circle golden center">
+        <div class="inner-ear circle green"></div>
+    </div>
+    <div class="head golden">
+        <div class="mark green"></div>
+        <div class="eye-l eye green circle"></div>
+        <div class="eye-r eye green circle"></div>
+        <div class="mouth-mark white"></div>
+        <div class="nose green"></div>
+        <div class="mouth-left mouth circle green center">
+            <div class="in white circle"></div>
+        </div>
+        <div class="mouth-right mouth circle green center">
+            <div class="in white circle"></div>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .yellow {
+        background: #F3AC3C;
+    }
+    
+    .golden {
+        background: #998235;
+    }
+    
+    .green {
+        background: #1A4341;
+    }
+    
+    .white {
+        background: #FFFFFF;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .w {
+        height: 300px;
+        width: 400px;
+        position: relative;
+    }
+    
+    .w * {
+        position: absolute;
+    }
+    
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    
+    .ear {
+        height: 60px;
+        width: 60px;
+        top: 65px;
+    }
+    
+    .ear-l {
+        left: 115px;
+    }
+    
+    .ear-r {
+        left: 225px;
+    }
+    
+    .inner-ear {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .head {
+        height: 150px;
+        width: 150px;
+        left: 125px;
+        top: 75px;
+        border-top-left-radius: 75px;
+        border-top-right-radius: 75px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        overflow: hidden;
+    }
+    
+    .mark {
+        transform: rotate(45deg);
+        height: 40px;
+        width: 40px;
+        left: 55px;
+        top: -23px;
+    }
+    
+    .eye {
+        height: 20px;
+        width: 20px;
+        top: 60px;
+    }
+    
+    .eye-l {
+        left: 25px;
+    }
+    
+    .eye-r {
+        left: 105px;
+    }
+    
+    .mouth-mark {
+        height: 40px;
+        width: 100px;
+        left: 25px;
+        top: 95px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    
+    .nose {
+        height: 20px;
+        width: 10px;
+        left: 70px;
+        top: 85px;
+    }
+    
+    .mouth {
+        height: 40px;
+        width: 40px;
+        top: 85px;
+        clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+    }
+    
+    .mouth-left {
+        left: 40px;
+    }
+    
+    .mouth-right {
+        left: 70px;
+    }
+    
+    .in {
+        height: 20px;
+        width: 20px;
+    }
+</style>
